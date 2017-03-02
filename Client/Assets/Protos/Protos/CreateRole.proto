@@ -1,0 +1,12 @@
+message CreateRoleReq
+{
+	required string nickName = 1;
+	required int32 profession = 2;
+	required bool sex = 3;
+}
+
+message CreateRoleRes
+{
+	required int32 result = 1;
+	optional int32 characterId = 2;
+}

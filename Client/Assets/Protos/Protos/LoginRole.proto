@@ -1,0 +1,32 @@
+message Data
+{
+	required string nickName = 1;
+	required int32 profession = 2;
+	required bool sex = 3;
+	required int32 level = 4;
+	required int32 coin = 5;
+	required int32 gold = 6;
+	required int32 life = 7;
+	required int32 attack = 8;
+	required int32 defend = 9;
+	required int32 magic = 10;
+	required int32 agility = 11;
+	required int32 speed = 12;
+	required int32 fortune = 13;
+	required int32 technique = 14;
+	required int32 skillPoint = 15;
+	required int32 status = 16;
+	required int32 positionX = 17;
+	required int32 positionY = 18;
+}
+
+message LoginRoleReq
+{
+	required int32 characterId = 1;
+}
+
+message LoginRoleRes
+{
+	required int32 result = 1;
+	optional Data data = 2;
+}

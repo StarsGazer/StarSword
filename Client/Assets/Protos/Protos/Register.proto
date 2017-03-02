@@ -1,0 +1,10 @@
+message RegisterReq
+{
+	required string username = 1;
+	required string password = 2;
+}
+
+message RegisterRes
+{
+	required int32 result = 1;
+}
